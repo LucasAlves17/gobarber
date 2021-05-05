@@ -1,0 +1,17 @@
+yarn init -y
+yarn add express
+yarn add sucrase nodemon -D
+docker start database //qund reinicia pc dar um restart na imagem
+yarn add eslint -D
+yarn eslint --init
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+yarn add sequelize
+yarn add sequelize-cli -D
+yarn add pg pg-hstore
+
+
+yarn sequelize migration:create --name=create-users
+yarn sequelize db:migrate  //caso queira desfazer basta concatenar ':undo' no fim
+
+yarn add bcryptjs
+yarn add jsonwebtoken
